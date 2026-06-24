@@ -1,18 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n;
+int main()
+{
+    int num;
     long long factorial = 1;
 
     cout << "Enter a number: ";
-    cin >> n;
+    cin >> num;
 
-    for(int i = 1; i <= n; i++) {
+    for(int i = 1; i <= num; i++)
+    {
         factorial = factorial * i;
     }
 
-    cout << "Factorial of " << n << " = " << factorial;
+    cout << "Factorial of " << num << " = " << factorial;
 
     return 0;
 }

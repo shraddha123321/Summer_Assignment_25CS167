@@ -1,17 +1,19 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n, sum = 0;
+int main()
+{
+    int N, sum = 0;
 
-    cout << "Enter a number: ";
-    cin >> n;
+    cout << "Enter N: ";
+    cin >> N;
 
-    for(int i = 1; i <= n; i++) {
+    for(int i = 1; i <= N; i++)
+    {
         sum = sum + i;
     }
-    cout << "Sum of first " << n << " natural numbers = " << sum;
+
+    cout << "Sum of first " << N << " natural numbers = " << sum;
 
     return 0;
 }
-

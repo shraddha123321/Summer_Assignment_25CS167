@@ -1,14 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n, count = 0;
+int main()
+{
+    int num, count = 0;
 
     cout << "Enter a number: ";
-    cin >> n;
+    cin >> num;
 
-    while(n != 0) {
-        n = n / 10;
+    while(num != 0)
+    {
+        num = num / 10;
         count++;
     }
 
