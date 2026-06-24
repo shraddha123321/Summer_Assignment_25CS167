@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num, binary[32], i = 0;
+
+    cout << "Enter a decimal number: ";
+    cin >> num;
+
+    while(num > 0)
+    {
+        binary[i] = num % 2;
+        num = num / 2;
+        i++;
+    }
+
+    cout << "Binary number: ";
+
+    for(i = i - 1; i >= 0; i--)
+    {
+        cout << binary[i];
+    }
+
+    return 0;
+}
